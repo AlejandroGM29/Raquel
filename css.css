@@ -1,0 +1,194 @@
+body {
+  background: #F8DAE9;
+  margin: 0;
+  overflow: hidden;
+  
+}
+
+svg {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+#flower1 {
+  width: 100px; /* Ajusta al tamaño deseado */
+  height: auto; /* Mantiene la proporción */
+}
+.flower {
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
+
+  position: fixed; /* Cambiamos relative por fixed */
+  top: 50%; /* Centramos verticalmente */
+  left: 50%; /* Centramos horizontalmente */
+  transform: translate(-50%, -150%); /* Ajustamos al centro exacto */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 2; /* Puedes ajustar el valor de z-index según tus necesidades */
+}
+.flower-container {
+  height: 600px;
+  width: 300px;
+  margin: 20px auto;
+  border: 2px #EFB0C9;
+  border-style: solid;
+  position: absolute; /* Cambiamos relative por fixed */
+  top: 50%; /* Centramos verticalmente */
+  left: 50%; /* Centramos horizontalmente */
+  transform: translate(-50%, -52%); /* Ajustamos al centro exacto */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  z-index: 1; /* Puedes ajustar el valor de z-index según tus necesidades */
+
+  backdrop-filter: blur(5px); /* Aplicar un efecto de desenfoque */
+}
+
+.mid {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  background: radial-gradient(circle, #000, #ff5e00, #000);
+
+  z-index: 4;
+
+  background-size: 5px 5px;
+
+  filter: drop-shadow(0 0 8px #682600);
+}
+
+.Petal1 {
+  position: absolute;
+  left: 40px;
+  z-index: 3;
+
+  width: 120px;
+  height: 30px;
+  border-radius: 50%;
+
+  background: radial-gradient(circle, #ff5e00, #ffbb00);
+
+  filter: drop-shadow(0 0 5px #e05200);
+}
+
+.Petal1.p1 {
+  transform: rotate(22.5deg);
+}
+.Petal1.p2 {
+  transform: rotate(67.5deg);
+}
+.Petal1.p3 {
+  transform: rotate(110.5deg);
+}
+.Petal1.p4 {
+  transform: rotate(157.5deg);
+}
+
+.Petal2 {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+
+  width: 200px;
+  height: 40px;
+  border-radius: 50%;
+
+  background: radial-gradient(circle, #ff5e00, #fbd702);
+
+  filter: drop-shadow(0 0 5px #e05200);
+}
+
+.Petal2.p1 {
+}
+
+.Petal2.p2 {
+  transform: rotate(90deg);
+}
+.Petal2.p3 {
+  transform: rotate(45deg);
+}
+
+.Petal2.p4 {
+  transform: rotate(135deg);
+}
+
+.Petal3 {
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+
+  width: 200px;
+  height: 40px;
+  border-radius: 50%;
+
+  background: radial-gradient(circle, #ff5e00, #fbd702);
+
+  filter: drop-shadow(0 0 2px #fbd702);
+}
+
+.Petal3.p1 {
+  transform: rotate(22.5deg);
+}
+.Petal3.p2 {
+  transform: rotate(67.5deg);
+}
+.Petal3.p3 {
+  transform: rotate(110.5deg);
+}
+.Petal3.p4 {
+  transform: rotate(157.5deg);
+}
+
+.audio-container {
+  position: absolute;
+  top: 80%; /* Centramos verticalmente */
+  left: 50%; /* Centramos horizontalmente */
+  transform: translate(-50%, -450%);
+  text-align: center; /* Centrar el contenido de audio y texto */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 3;
+  color: #a1c9f1;
+
+}
+audio::-webkit-media-controls-panel {
+  background-color: #F4c2d7;
+  border: 10px solid black;
+}
+audio {
+  width: 250px;
+  display: block;
+  margin: 0 auto; /* Centrar el elemento de audio horizontalmente */
+}
+
+.texto {
+  top: 80%;
+  /* Estilos para el texto debajo del audio */
+  margin-top: 20px; /* Espacio entre el audio y el texto */
+  font-size: 16px; /* Tamaño de fuente personalizado */
+  color: #000;
+  position: absolute;
+  top: 80%; /* Centramos verticalmente */
+  left: 50%; /* Centramos horizontalmente */
+  transform: translate(-50%, 2px);
+  text-align: center; /* Centrar el contenido de audio y texto */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
+  z-index: 3;
+  
+}
